@@ -1,0 +1,18 @@
+.root {
+    font-size: 0.85rem;
+    padding: 6px 12px;
+    border-radius: 12px;
+    background-color: #2a3942;
+
+    &.connecting {
+        color: #ffd700;
+    }
+
+    &.connected {
+        color: #00a884;
+    }
+
+    &.error {
+        color: #ff4444;
+    }
+}

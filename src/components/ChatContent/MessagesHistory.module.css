@@ -1,0 +1,62 @@
+.root {
+    flex: 1;
+    padding: 1.5rem;
+    overflow-y: auto;
+    background-color: #0b141a;
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAOxAAADsQBlSsOGwAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAABoSURBVEiJ7dexDcAgDAVRyEIMQMb4G4aZhWwRQ0BHkRJ9+qeT3kl2dXPQB4e9qGpExFxVZ0k7gKr6zN3HiAhJ6cHVHjPD3b/OlJnpwdVeZsbMeHB4MLzY3hhh2Y/lw/aZyYPt+/H1gRewLlNRyF7ygQAAAABJRU5ErkJggg==');
+}
+
+.error {
+    background-color: rgba(255, 68, 68, 0.9);
+    color: white;
+    padding: 10px 14px;
+    margin: 8px;
+    border-radius: 8px;
+    text-align: center;
+    white-space: pre-line;
+    animation: errorAppear 0.3s ease-out;
+}
+@keyframes errorAppear {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.message {
+    max-width: 65%;
+    padding: 10px 14px;
+    margin: 8px;
+    border-radius: 10px;
+    font-size: 0.95rem;
+    line-height: 1.4;
+    word-wrap: break-word;
+    position: relative;
+    animation: messageAppear 0.3s ease-out;
+
+    &.sent {
+        background-color: #005c4b;
+        margin-left: auto;
+        border-top-right-radius: 4px;
+    }
+
+    &.received {
+        background-color: #202c33;
+        margin-right: auto;
+        border-top-left-radius: 4px;
+    }
+}
+@keyframes messageAppear {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

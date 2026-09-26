@@ -1,0 +1,11 @@
+.root {
+    width: 90%;
+    max-width: 1200px;
+    height: 90vh;
+    background-color: #222e35;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
